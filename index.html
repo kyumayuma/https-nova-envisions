@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="NOVA｜視点を変え、未来をつくる。定番の施策にとらわれない、企業ごとの新しいマーケティングアプローチを提案します。" />
+<title>NOVA｜視点を変え、未来をつくる。</title>
+<link rel="icon" type="image/png" sizes="48x48" href="favicon/favicon-48.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16.png">
+<link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Noto+Sans+JP:wght@400;500;600;700;800&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+
+<!-- Google Analytics 4 (GA4) — プレースホルダー -->
+<!-- 社長に実際の測定ID（G-XXXXXXXXXX）を発行してもらい、下記2箇所の "G-XXXXXXXXXX" を差し替えてください -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+</head>
+<body>
+<div class="site-shell">
+
+  <header class="header" id="header">
+    <a class="logo" href="#top" aria-label="NOVA home">
+      <img class="logo-mark" src="design-source/logo-nova-wordmark.png" alt="NOVA" width="888" height="201">
+      <span>MARKETING PARTNER</span>
+    </a>
+
+    <nav class="desktop-nav" aria-label="メインナビゲーション">
+      <a href="#projects"><small>PROJECTS</small>事例紹介</a>
+      <a href="#about"><small>ABOUT</small>私たちについて</a>
+      <a href="#plan"><small>PLAN</small>プラン・料金</a>
+      <a href="#service"><small>SERVICE</small>サービス</a>
+      <a href="#contact" class="nav-contact"><small>CONTACT</small>お問い合わせ</a>
+    </nav>
+
+    <button class="menu-button" id="menuButton" type="button" aria-label="メニューを開く" aria-controls="mobileMenu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <div class="menu-overlay" id="menuOverlay" aria-hidden="true"></div>
+
+  <aside class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu-head">
+      <span class="mobile-menu-title">MENU</span>
+      <button class="menu-close" type="button" aria-label="メニューを閉じる">
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-nav" aria-label="モバイルナビゲーション">
+      <a href="#top"><span>01</span><b>TOP</b><i>↗</i></a>
+      <a href="#projects"><span>02</span><b>PROJECTS</b><i>↗</i></a>
+      <a href="#about"><span>03</span><b>ABOUT</b><i>↗</i></a>
+      <a href="#plan"><span>04</span><b>PLAN</b><i>↗</i></a>
+      <a href="#service"><span>05</span><b>SERVICE</b><i>↗</i></a>
+      <a href="#contact"><span>06</span><b>CONTACT</b><i>↗</i></a>
+    </nav>
+
+    <div class="mobile-menu-bottom">
+      <p>視点を変え、未来をつくる<br>マーケティングパートナー</p>
+      <div class="mobile-menu-meta">
+        <span>© 2026 NOVA</span>
+        <span>Privacy Policy</span>
+      </div>
+    </div>
+  </aside>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero hero-approved" id="heroSection">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="hero-kicker">NOVA / MARKETING PARTNER</p>
+          <!-- 2026-09-26（開発リード・蒼）: 社長FB「モバイル版の見出しの読点がバランス悪く見える」対応で
+               読点をspanで囲み、768px未満（max-width:1023pxブロック基準）でのみdisplay:noneにする実装に変更。
+               768px以上（タブレット・デスクトップ）は従来通り読点を表示。改行位置・句点はモバイルでも無変更。 -->
+          <h1>視点を変え、<br>未来をつくる<span class="hero-h1-comma">。</span></h1>
+          <p class="hero-lead">
+            目の前の課題を、もっと面白く。<br>
+            マーケティングの力で、まだ見ぬ価値と出会う。
+          </p>
+          <a class="btn btn-primary hero-cta" href="#projects"><span>一目でわかるソリューション</span><span class="arrow">→</span></a>
+        </div>
+
+        <div class="hero-visual">
+          <!-- 2026-09-26（開発リード・蒼）: 自作の生成・調整は打ち切り、社長が別ツール(Codex)側で作らせた
+               素材 design-source/hero-lens-city-day-v4-codex.png（1784×881、社長支給・無加工の原本として
+               保持）を採用する方針に転換。レンズ内部（東京タワー含む鮮明な街並み写真）・ガラスリング・青い
+               軌道線は既存v1〜v3と同一の元写真・同一構図であることを目視確認済み。レンズ外側の「ぼやけた
+               街並み」はCodex側で建物ディテール・奥行き・色調のバランスよく生成されており、そのまま採用。
+               ただしCodex原本はキャンバスサイズ・アスペクト比が旧v1〜v3（1915×821）と異なる（1784×881）
+               ため、CSS側は一切変更せず、画像側でキャンバス幅1915pxへ等比拡大→上下トリミングで合わせた
+               design-source/hero-lens-city-day-v4.png を作成。
+               2026-09-26追記（社長FB2点への再修正、同ファイルに上書き）: (1)当初は上下均等トリミングで
+               1915×821にしていたが、Codex原本はレンズが中央より下寄りにあったため均等トリミングだと
+               リング下端がキャンバス底辺で見切れてしまっていた。トリミングを上部（余白の多い空側）中心に
+               やり直し、キャンバスも821→879pxに微増してレンズ全体＋上下の余白（旧v1〜v3同様、上下とも
+               見切れない範囲）を確保。(2)レンズ外側のぼやけた街並み（右側）に、レンズ内部に写っている
+               東京タワーとは別の東京タワー状の赤白オブジェクトが二重に写り込んでいたため、その部分だけ
+               周辺の建物シルエットのトーンでクローンスタンプ的に塗り替えて除去（他の建物シルエットは無変更）。
+               レンズ内部の鮮明写真・ガラスリング・青い軌道線は上記2点の修正後もbit-identical（numpy diffで
+               確認済み、変更範囲はタワー除去箇所のみに限定）。v1〜v3・Codex原本は削除せず保持。 -->
+          <img class="hero-lens-art" src="design-source/hero-lens-city-day-v4.png" alt="">
+          <svg class="hero-orb hero-nova" viewBox="0 0 520 520" aria-hidden="true" focusable="false">
+            <defs>
+              <radialGradient id="heroNovaCoreGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#3477fe" stop-opacity=".92"/>
+                <stop offset="32%" stop-color="#1062fd" stop-opacity=".4"/>
+                <stop offset="65%" stop-color="#1062fd" stop-opacity=".12"/>
+                <stop offset="100%" stop-color="#1062fd" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="heroNovaCoreCenter" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#f5f8ff" stop-opacity="1"/>
+                <stop offset="55%" stop-color="#dbe8ff" stop-opacity=".9"/>
+                <stop offset="100%" stop-color="#3477fe" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="heroNovaRayMain" x1=".5" y1="1" x2=".5" y2="0">
+                <stop offset="0%" stop-color="#1c4fd6" stop-opacity=".95"/>
+                <stop offset="45%" stop-color="#3477fe" stop-opacity=".8"/>
+                <stop offset="100%" stop-color="#3477fe" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="heroNovaRayMainLime" x1=".5" y1="1" x2=".5" y2="0">
+                <stop offset="0%" stop-color="#1c4fd6" stop-opacity=".95"/>
+                <stop offset="45%" stop-color="#3477fe" stop-opacity=".78"/>
+                <stop offset="78%" stop-color="#a9d94a" stop-opacity=".55"/>
+                <stop offset="100%" stop-color="#dbf961" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="heroNovaRaySub" x1=".5" y1="1" x2=".5" y2="0">
+                <stop offset="0%" stop-color="#1062fd" stop-opacity=".62"/>
+                <stop offset="100%" stop-color="#1062fd" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="heroNovaRaySubLime" x1=".5" y1="1" x2=".5" y2="0">
+                <stop offset="0%" stop-color="#1062fd" stop-opacity=".62"/>
+                <stop offset="60%" stop-color="#1062fd" stop-opacity=".4"/>
+                <stop offset="100%" stop-color="#dbf961" stop-opacity="0"/>
+              </linearGradient>
+              <radialGradient id="heroNovaGlowBlue" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#1062fd" stop-opacity=".55"/>
+                <stop offset="100%" stop-color="#1062fd" stop-opacity="0"/>
+              </radialGradient>
+              <radialGradient id="heroNovaGlowLime" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#dbf961" stop-opacity=".6"/>
+                <stop offset="100%" stop-color="#dbf961" stop-opacity="0"/>
+              </radialGradient>
+              <linearGradient id="heroNovaShockStroke" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#1062fd" stop-opacity=".2"/>
+                <stop offset="100%" stop-color="#dbf961" stop-opacity=".14"/>
+              </linearGradient>
+            </defs>
+
+            <!-- 衝撃波（欠けた弧。360度の閉じた輪にはしない） -->
+            <path class="hero-nova-shock" d="M 488 300 A 232 232 0 1 1 409 82"/>
+
+            <!-- 放射レイ（主4本＋副5本。回転はさせず不透明度のみで明滅） -->
+            <g class="hero-nova-rays">
+              <g class="hero-nova-ray-wrap hero-nova-ray-g1" transform="rotate(350 260 260)"><polygon class="hero-nova-ray hero-nova-ray--main hero-nova-ray--lime" points="249,238 271,238 260,50"/></g>
+              <g class="hero-nova-ray-wrap hero-nova-ray-g2" transform="rotate(200 260 260)"><polygon class="hero-nova-ray hero-nova-ray--main" points="249,238 271,238 260,60"/></g>
+              <g class="hero-nova-ray-wrap hero-nova-ray-g3" transform="rotate(255 260 260)"><polygon class="hero-nova-ray hero-nova-ray--main" points="249,238 271,238 260,96"/></g>
+              <g class="hero-nova-ray-wrap hero-nova-ray-g1" transform="rotate(300 260 260)"><polygon class="hero-nova-ray hero-nova-ray--main" points="249,238 271,238 260,81"/></g>
+
+              <g class="hero-nova-ray-wrap hero-nova-ray-g2" transform="rotate(20 260 260)"><polygon class="hero-nova-ray hero-nova-ray--sub" points="255,242 265,242 260,165"/></g>
+              <g class="hero-nova-ray-wrap hero-nova-ray-g3" transform="rotate(165 260 260)"><polygon class="hero-nova-ray hero-nova-ray--sub" points="255,242 265,242 260,180"/></g>
+              <g class="hero-nova-ray-wrap hero-nova-ray-g1" transform="rotate(225 260 260)"><polygon class="hero-nova-ray hero-nova-ray--sub" points="255,242 265,242 260,155"/></g>
+              <g class="hero-nova-ray-wrap hero-nova-ray-g2" transform="rotate(275 260 260)"><polygon class="hero-nova-ray hero-nova-ray--sub" points="255,242 265,242 260,172"/></g>
+              <g class="hero-nova-ray-wrap hero-nova-ray-g3" transform="rotate(320 260 260)"><polygon class="hero-nova-ray hero-nova-ray--sub hero-nova-ray--lime" points="255,242 265,242 260,144"/></g>
+            </g>
+
+            <!-- 放出パーティクル（8〜14個、爆発で飛び散った星屑。角度を広く分散させ
+                 「一直線に並ぶ」不自然さを避けている） -->
+            <g class="hero-nova-particles">
+              <g class="hero-nova-particle-wrap" transform="rotate(165 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="130" r="7" fill="url(#heroNovaGlowBlue)"/><circle cx="260" cy="130" r="3" fill="#1062fd"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(185 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="190" r="5" fill="url(#heroNovaGlowBlue)"/><circle cx="260" cy="190" r="2.2" fill="#1062fd"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(204 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="70" r="9" fill="url(#heroNovaGlowLime)"/><circle cx="260" cy="70" r="4" fill="#dbf961"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(224 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="160" r="6" fill="url(#heroNovaGlowBlue)"/><circle cx="260" cy="160" r="2.5" fill="#1062fd"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(243 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="100" r="7" fill="url(#heroNovaGlowBlue)"/><circle cx="260" cy="100" r="3" fill="#1062fd"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(263 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="215" r="5" fill="url(#heroNovaGlowBlue)"/><circle cx="260" cy="215" r="2" fill="#1062fd"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(282 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="50" r="9" fill="url(#heroNovaGlowLime)"/><circle cx="260" cy="50" r="4" fill="#dbf961"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(302 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="175" r="6" fill="url(#heroNovaGlowBlue)"/><circle cx="260" cy="175" r="2.5" fill="#1062fd"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(321 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="110" r="7" fill="url(#heroNovaGlowBlue)"/><circle cx="260" cy="110" r="3" fill="#1062fd"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(341 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="200" r="8" fill="url(#heroNovaGlowLime)"/><circle cx="260" cy="200" r="3.5" fill="#dbf961"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(0 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="85" r="5" fill="url(#heroNovaGlowBlue)"/><circle cx="260" cy="85" r="2.2" fill="#1062fd"/></g></g>
+              <g class="hero-nova-particle-wrap" transform="rotate(20 260 260)"><g class="hero-nova-particle"><circle cx="260" cy="150" r="5" fill="url(#heroNovaGlowBlue)"/><circle cx="260" cy="150" r="2" fill="#1062fd"/></g></g>
+            </g>
+
+            <!-- 中心核（誕生の一点。最前面） -->
+            <g class="hero-nova-core">
+              <circle class="hero-nova-core-glow" cx="260" cy="260" r="96" fill="url(#heroNovaCoreGlow)"/>
+              <circle class="hero-nova-core-center" cx="260" cy="260" r="13" fill="url(#heroNovaCoreCenter)"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#projects" aria-label="スクロールして次のセクションへ">
+        <span class="scroll-hint-label">SCROLL</span>
+        <span class="scroll-hint-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- PROJECTS / EXPERIENCE -->
+    <section class="projects" id="projects">
+      <div class="section-head">
+        <p class="eyebrow">PROJECTS / EXPERIENCE</p>
+        <h2>想いを、体験に。</h2>
+        <p class="section-lead">
+          私たちは、ただのWebサイトや広告をつくるのではなく、<br>
+          人の心が動く「体験」をデザインします。
+        </p>
+        <a class="text-link" href="#service"><span class="dash" aria-hidden="true">——</span> すべてのプロジェクトを見る <span class="arrow">→</span></a>
+      </div>
+
+      <div class="case-grid">
+        <article class="case-card">
+          <div class="case-image">
+            <span class="case-model-badge case-model-badge--growth">NOVA Growth</span>
+            <img src="design-source/photo-realestate-window.png" alt="窓辺でスカイツリーを眺める写真">
+          </div>
+          <div class="case-body">
+            <span class="case-label">REAL ESTATE</span>
+            <h3>住まいを探すから、<br>暮らしを見つけるへ。</h3>
+            <p>不動産の新しい体験を、<br>暮らしの視点から。</p>
+            <a href="../livnest/index.html" class="case-link" target="_blank" rel="noopener" data-modal="caseModalLivnest" aria-haspopup="dialog" aria-label="LIVNESTの詳細を見る">→</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-image">
+            <span class="case-model-badge case-model-badge--growth">NOVA Growth</span>
+            <img src="design-source/photo-interior-livingroom.jpg" alt="明るいリビングとソファ、観葉植物の写真">
+          </div>
+          <div class="case-body">
+            <span class="case-label">INTERIOR</span>
+            <h3>家具を選ぶから、<br>理想の部屋へ。</h3>
+            <p>家具・インテリアの新しい体験を、<br>部屋選びの視点から。</p>
+            <a href="../NESTA＿2/index.html" class="case-link" target="_blank" rel="noopener" data-modal="caseModalNesta" aria-haspopup="dialog" aria-label="NESTAの詳細を見る">→</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-image">
+            <span class="case-model-badge case-model-badge--ready">NOVA Ready</span>
+            <img src="design-source/photo-mori-coffee-hero.png" alt="緑と木漏れ日に包まれた、明るいカフェ店内の写真">
+          </div>
+          <div class="case-body">
+            <span class="case-label">CAFE</span>
+            <h3>情報を並べるから、<br>空気を届けるへ。</h3>
+            <p>カフェの新しい体験を、<br>世界観の視点から。</p>
+            <a href="../MORI-COFFEE/index.html" class="case-link" target="_blank" rel="noopener" data-modal="caseModalMoriCoffee" aria-haspopup="dialog" aria-label="MORI COFFEEの詳細を見る">→</a>
+          </div>
+        </article>
+
+        <article class="case-card">
+          <div class="case-image">
+            <span class="case-model-badge case-model-badge--growth">NOVA Growth</span>
+            <img src="design-source/photo-archer-hero.png" alt="夕暮れの空を映す、飛行機の窓の写真">
+          </div>
+          <div class="case-body">
+            <span class="case-label">PRIVATE AVIATION</span>
+            <h3>紹介するから、<br>体感させるへ。</h3>
+            <p>プライベートジェットの新しい体験を、<br>上質さの視点から。</p>
+            <a href="../ARCHER/index.html" class="case-link" target="_blank" rel="noopener" data-modal="caseModalArcher" aria-haspopup="dialog" aria-label="プライベートジェット事例の詳細を見る">→</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- 事例詳細モーダル: 課題→解決策のコピー。カード自体の見た目（写真・タグライン・矢印リンク）は変更せず、
+           矢印クリックでこのdialogを開く。dialog未対応ブラウザ/JS無効時は矢印リンクが従来通り実サイトへ遷移する
+           （script.jsでpreventDefaultする前提のプログレッシブ・エンハンスメント、フォールバック確保）。 -->
+      <dialog class="case-modal" id="caseModalLivnest" aria-labelledby="caseModalLivnestTitle">
+        <div class="case-modal-inner">
+          <button type="button" class="case-modal-close" data-modal-close aria-label="モーダルを閉じる">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M1 1L15 15M15 1L1 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <span class="case-modal-label">REAL ESTATE</span>
+          <h3 class="case-modal-title" id="caseModalLivnestTitle">LIVNEST — 住まいを探すから、暮らしを見つけるへ。</h3>
+          <div class="case-modal-section">
+            <p class="case-modal-heading">課題</p>
+            <p class="case-modal-body">駅からの距離や家賃といった条件だけで探しても、「暮らし方」に合う場所とは出会えない。既存の不動産ポータルには、感性に合う街を提案する機能がない。</p>
+          </div>
+          <div class="case-modal-section">
+            <p class="case-modal-heading">解決策</p>
+            <p class="case-modal-body">賑わい・自然・カルチャー・利便性・家賃の5軸で回答と物件データをマッチング。条件検索の"その先"にある「暮らし方から選ぶ」体験を実装。</p>
+          </div>
+          <div class="case-modal-actions">
+            <a class="btn btn-primary" href="../livnest/index.html" target="_blank" rel="noopener">実際のサイトを見る <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog class="case-modal" id="caseModalNesta" aria-labelledby="caseModalNestaTitle">
+        <div class="case-modal-inner">
+          <button type="button" class="case-modal-close" data-modal-close aria-label="モーダルを閉じる">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M1 1L15 15M15 1L1 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <span class="case-modal-label">INTERIOR</span>
+          <h3 class="case-modal-title" id="caseModalNestaTitle">NESTA — 家具を選ぶから、理想の部屋へ。</h3>
+          <div class="case-modal-section">
+            <p class="case-modal-heading">課題</p>
+            <p class="case-modal-body">家具はひとつずつ選べても、部屋全体のコーディネートは難しく、「イメージ通りの部屋」に仕上がらない。</p>
+          </div>
+          <div class="case-modal-section">
+            <p class="case-modal-heading">解決策</p>
+            <p class="case-modal-body">部屋のスタイルをプリセットから選ぶだけで、家具の組み合わせとルームイメージをリアルタイムに可視化する「YOUR ROOM」コンフィギュレーターを実装。</p>
+          </div>
+          <div class="case-modal-actions">
+            <a class="btn btn-primary" href="../NESTA＿2/index.html" target="_blank" rel="noopener">実際のサイトを見る <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog class="case-modal" id="caseModalMoriCoffee" aria-labelledby="caseModalMoriCoffeeTitle">
+        <div class="case-modal-inner">
+          <button type="button" class="case-modal-close" data-modal-close aria-label="モーダルを閉じる">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M1 1L15 15M15 1L1 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <span class="case-modal-label">CAFE</span>
+          <h3 class="case-modal-title" id="caseModalMoriCoffeeTitle">MORI COFFEE — 情報を並べるから、空気を届けるへ。</h3>
+          <div class="case-modal-section">
+            <p class="case-modal-heading">課題</p>
+            <p class="case-modal-body">小規模店舗のサイトは「とりあえず情報が載っているだけ」になりがちで、お店の空気感や世界観が伝わらない。</p>
+          </div>
+          <div class="case-modal-section">
+            <p class="case-modal-heading">解決策</p>
+            <p class="case-modal-body">1ページ完結の構成の中に、写真のトーン・配色・タイポグラフィまで一貫させ、短期間・低コストでもブランドの雰囲気がしっかり伝わるサイトに仕上げる。</p>
+          </div>
+          <div class="case-modal-actions">
+            <a class="btn btn-primary" href="../MORI-COFFEE/index.html" target="_blank" rel="noopener">実際のサイトを見る <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </dialog>
+
+      <dialog class="case-modal" id="caseModalArcher" aria-labelledby="caseModalArcherTitle">
+        <div class="case-modal-inner">
+          <button type="button" class="case-modal-close" data-modal-close aria-label="モーダルを閉じる">
+            <svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
+              <path d="M1 1L15 15M15 1L1 15" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+            </svg>
+          </button>
+          <span class="case-modal-label">PRIVATE AVIATION</span>
+          <h3 class="case-modal-title" id="caseModalArcherTitle">紹介するから、体感させるへ。</h3>
+          <div class="case-modal-section">
+            <p class="case-modal-heading">課題</p>
+            <p class="case-modal-body">高単価・高付加価値のブランドほど、サイト体験そのものが信頼感を左右する。テンプレート的な作りでは、その世界観を十分に伝えきれない。</p>
+          </div>
+          <div class="case-modal-section">
+            <p class="case-modal-heading">解決策</p>
+            <p class="case-modal-body">WebGLによるカスタム演出やスクロール設計まで作り込み、閲覧者の体験そのものを「上質さ」の証明にする。</p>
+          </div>
+          <div class="case-modal-actions">
+            <a class="btn btn-primary" href="../ARCHER/index.html" target="_blank" rel="noopener">実際のサイトを見る <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </dialog>
+    </section>
+
+    <!-- OUR APPROACH -->
+    <section class="approach" id="approach">
+      <div class="approach-inner">
+        <div class="approach-text">
+          <p class="eyebrow">OUR APPROACH</p>
+          <h2>定番の、<br>その先へ。</h2>
+        </div>
+        <p class="approach-lead">
+          決まった正解のない時代だからこそ、<br>
+          私たちは"定番の先"にある、新しい選択肢をつくります。<br>
+          マーケティングの力で、まだ見ぬ価値を社会に届けます。
+        </p>
+      </div>
+      <div class="approach-photo">
+        <img src="design-source/photo-approach-sunset.png" alt="夕景のビル屋上に立つ人物の写真">
+        <span class="cursive approach-cursive">もっと先の景色を、<br>一緒に見にいこう。</span>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHY -->
+    <section class="philosophy" id="philosophy">
+      <div class="philosophy-block philosophy-block-light">
+        <p class="philosophy-eyebrow">01 / YOUR OWN EDGE</p>
+        <h2>「あなたらしさ」を、起点に。</h2>
+        <div class="philosophy-copy">
+          <p>Webサイト制作、広告運用、SEO対策。これらは、今や多くの企業が取り組むマーケティング施策です。もちろん、これらが必要な場面もあります。</p>
+          <p>しかし、定番化された施策だけでは、競合との明確な差別化が難しくなっています。私たちは、既存の施策を否定するのではなく、その先にある新しい一手を考えます。企業ごとの強みや顧客、商品、事業特性を見つめ直し、「その会社だからこそできること」を起点に、新たな施策を企画します。</p>
+          <p>画一的なマーケティングではなく、あなたの会社と相性の良い、まだ定番になっていないアプローチを。</p>
+        </div>
+      </div>
+
+      <div class="philosophy-block philosophy-block-dark">
+        <img class="philosophy-orbit" src="design-source/graphic-orbit-lines.png" alt="" aria-hidden="true">
+        <p class="philosophy-eyebrow philosophy-eyebrow-dark">02 / DIFFERENT ANSWER</p>
+        <h2>課題だけを、<br>見つめない。</h2>
+        <div class="philosophy-copy philosophy-copy-dark">
+          <p>マーケティングでは、「課題を見つけ、解決すること」が重要だと言われています。もちろん、それは間違いではありません。でも、少しだけ視点を変えてみる。事業を始めたその日から、今の課題があったでしょうか。おそらく最初にあったのは、ひとつのアイデアと、踏み出す勇気だったはずです。</p>
+          <p>「もし、今までと違う角度から考えたら何ができるだろう？」という問いを大切にします。これまで積み上げてきた実績も、既存の施策も、変える必要はありません。今あるものは、そのまま活かす。そのうえで、別の角度から新しい可能性をつくる。</p>
+          <p>課題を解決するだけではなく、まだ見えていない可能性を見つける。それが、私たちのマーケティングです。</p>
+        </div>
+        <span class="cursive philosophy-cursive">違う角度から、<br>可能性を見つける。</span>
+      </div>
+    </section>
+
+    <!-- PLAN -->
+    <section class="plan" id="plan">
+      <div class="plan-intro">
+        <div class="plan-intro-title">
+          <p class="eyebrow">PLAN</p>
+          <h2>プラン・料金</h2>
+        </div>
+        <p class="plan-intro-lead">
+          NOVAには、目的に合わせて選べる2つのサービスモデルがあります。<br>
+          「つくってから届ける」買い切り型と、「何を変えるべきかから考える」伴走型です。
+        </p>
+      </div>
+
+      <ul class="plan-models" aria-label="NOVAの2つのサービスモデル">
+        <li class="plan-model plan-model-ready">
+          <a class="plan-model-link" href="#plan-ready">
+            <p class="plan-model-eyebrow">MODEL 01</p>
+            <h3>NOVA Ready</h3>
+            <p class="plan-model-desc">実績あるWebリニューアル案を、そのまま導入。つくってから、届ける買い切り型。</p>
+          </a>
+        </li>
+        <li class="plan-model plan-model-growth">
+          <a class="plan-model-link" href="#plan-growth">
+            <p class="plan-model-eyebrow">MODEL 02</p>
+            <h3>NOVA Growth</h3>
+            <p class="plan-model-desc">「何を変えるべきか」から、一緒に考える。課題分析から公開後の改善までの伴走型。</p>
+          </a>
+        </li>
+      </ul>
+
+      <div class="plan-group" id="plan-ready">
+        <div class="plan-group-head">
+          <p class="plan-group-name">NOVA Ready <span>— 買い切り型</span></p>
+          <p class="plan-group-lead">営業する前に私たちが実際につくったWebリニューアル案を、そのまま導入いただくプランです。目的や規模に合わせて、3つからお選びいただけます。</p>
+        </div>
+
+        <ul class="plan-grid" aria-label="NOVA Readyの3つのプラン">
+          <li class="plan-card plan-card-light">
+            <div class="plan-card-head">
+              <p class="plan-card-name">LIGHT</p>
+              <p class="plan-card-price"><span class="plan-card-price-num">49,800</span><span class="plan-card-price-suffix">円〜</span></p>
+              <p class="plan-card-catch">シンプルだけど、しっかり良い。</p>
+            </div>
+            <p class="plan-card-target">小規模事業者向けの1ページ完結型サイト。</p>
+            <ul class="plan-card-specs">
+              <li><span>ページ構成</span>1ページ</li>
+              <li><span>デザイン / UI</span>オリジナルデザイン</li>
+              <li><span>演出</span>基本アニメーション</li>
+              <li><span>導線</span>問い合わせ導線</li>
+              <li><span>SEO</span>基本SEO</li>
+              <li><span>修正回数</span>2回程度</li>
+            </ul>
+          </li>
+
+          <li class="plan-card plan-card-standard">
+            <p class="plan-card-badge">主力プラン</p>
+            <div class="plan-card-head">
+              <p class="plan-card-name">STANDARD</p>
+              <p class="plan-card-price"><span class="plan-card-price-num">79,800</span><span class="plan-card-price-suffix">円〜</span></p>
+              <p class="plan-card-catch">情報量とブランド表現を両立。</p>
+            </div>
+            <p class="plan-card-target">企業サイトの基本形。最も多くの企業に提案するプランです。</p>
+            <ul class="plan-card-specs">
+              <li><span>ページ構成</span>TOP＋下層3〜5ページ</li>
+              <li><span>デザイン / UI</span>オリジナルUI</li>
+              <li><span>演出</span>アニメーション</li>
+              <li><span>導線</span>CTA設計</li>
+              <li><span>SEO</span>SEO基礎設定</li>
+              <li><span>修正回数</span>2〜3回</li>
+            </ul>
+          </li>
+
+          <li class="plan-card plan-card-premium">
+            <div class="plan-card-head">
+              <p class="plan-card-name">PREMIUM</p>
+              <p class="plan-card-price"><span class="plan-card-price-num">149,800</span><span class="plan-card-price-suffix">円〜</span></p>
+              <p class="plan-card-catch">ブランド体験まで作り込む。</p>
+            </div>
+            <p class="plan-card-target">デザインやブランド表現を重視する企業向け。</p>
+            <ul class="plan-card-specs">
+              <li><span>ページ構成</span>TOP＋下層5〜8ページ</li>
+              <li><span>デザイン / UI</span>高度なUI</li>
+              <li><span>演出</span>アニメーション＋インタラクション</li>
+              <li><span>導線</span>高度なCTA設計</li>
+              <li><span>SEO</span>SEO設計</li>
+              <li><span>CMS / 実績・採用</span>CMS／実績一覧／採用コンテンツ</li>
+              <li><span>修正回数</span>3回程度</li>
+            </ul>
+          </li>
+        </ul>
+
+        <p class="plan-note">スマホ対応・公開作業は、全プランに共通で含まれます。</p>
+
+        <div class="plan-aftercare">
+          <p class="plan-aftercare-eyebrow">公開後の継続サービス（オプション）</p>
+          <div class="plan-aftercare-grid">
+            <div class="plan-aftercare-item">
+              <p class="plan-aftercare-label">保守プラン</p>
+              <p class="plan-aftercare-price">月 5,500円〜11,000円</p>
+              <p class="plan-aftercare-desc">サーバー確認・軽微な修正・CMS更新・バックアップ・トラブル対応</p>
+            </div>
+            <div class="plan-aftercare-item">
+              <p class="plan-aftercare-label">Web改善プラン</p>
+              <p class="plan-aftercare-price">月 33,000円〜55,000円</p>
+              <p class="plan-aftercare-desc">アクセス分析・CTA改善・UI改善・コンテンツ改善・導線改善</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="plan-options">
+          <p class="plan-options-label">オプション例（基本料金には含まれません）</p>
+          <ul class="plan-options-list">
+            <li>ページ追加</li>
+            <li>CMS</li>
+            <li>ブログ</li>
+            <li>予約システム</li>
+            <li>EC</li>
+            <li>多言語</li>
+            <li>コピーライティング</li>
+            <li>写真撮影</li>
+            <li>動画</li>
+            <li>ロゴ制作</li>
+            <li>高度なアニメーション</li>
+            <li>サーバー・ドメイン取得サポート</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="plan-group plan-group-growth" id="plan-growth">
+        <div class="plan-group-head">
+          <p class="plan-group-name">NOVA Growth <span>— コンサル型</span></p>
+          <p class="plan-group-lead">「何を作るか」ではなく「何を変えるべきか」から考える、課題分析から公開後の改善までを一貫支援するプランです。</p>
+        </div>
+
+        <div class="plan-growth-panel">
+          <div class="plan-growth-head">
+            <p class="plan-growth-eyebrow">NOVA GROWTH</p>
+            <h4>集客強化・差別化など、<br>Web戦略から見直したい企業へ。</h4>
+            <p class="plan-growth-lead">現状分析・競合調査からポジショニングとWeb戦略の設計、UIデザインや実装、公開後のアクセス分析・改善提案まで、私たちが一貫して伴走します。</p>
+
+            <dl class="plan-growth-meta">
+              <div class="plan-growth-meta-item">
+                <dt>制作価格</dt>
+                <dd>80万円〜150万円<span>大規模案件は150万〜300万円以上</span></dd>
+              </div>
+              <div class="plan-growth-meta-item">
+                <dt>継続支援</dt>
+                <dd>月5万円〜20万円</dd>
+              </div>
+              <div class="plan-growth-meta-item">
+                <dt>想定顧客</dt>
+                <dd>集客強化・差別化など、Web戦略から見直したい企業</dd>
+              </div>
+            </dl>
+          </div>
+
+          <ol class="plan-growth-phases" aria-label="NOVA Growthの4つの提供フェーズ">
+            <li class="plan-growth-phase">
+              <span class="plan-growth-phase-index">01</span>
+              <p class="plan-growth-phase-name">分析</p>
+              <ul>
+                <li>現状分析</li>
+                <li>競合調査</li>
+                <li>市場・顧客リサーチ</li>
+                <li>ターゲット整理</li>
+              </ul>
+            </li>
+            <li class="plan-growth-phase">
+              <span class="plan-growth-phase-index">02</span>
+              <p class="plan-growth-phase-name">戦略・設計</p>
+              <ul>
+                <li>ポジショニング</li>
+                <li>Web戦略設計</li>
+                <li>サイト構成</li>
+                <li>UX設計</li>
+              </ul>
+            </li>
+            <li class="plan-growth-phase">
+              <span class="plan-growth-phase-index">03</span>
+              <p class="plan-growth-phase-name">制作</p>
+              <ul>
+                <li>UIデザイン</li>
+                <li>コピー・訴求設計</li>
+                <li>Webサイト実装</li>
+                <li>公開</li>
+              </ul>
+            </li>
+            <li class="plan-growth-phase">
+              <span class="plan-growth-phase-index">04</span>
+              <p class="plan-growth-phase-name">改善</p>
+              <ul>
+                <li>アクセス分析</li>
+                <li>CV改善</li>
+                <li>継続改善提案</li>
+              </ul>
+            </li>
+          </ol>
+
+          <div class="plan-growth-cta">
+            <p class="plan-growth-cta-note">NOVA Growthが実現する、ソリューションの一例</p>
+            <a class="plan-growth-cta-link" href="../ARCHER/index.html" target="_blank" rel="noopener">圧巻の作り込みを見る <span class="arrow">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="service" id="service">
+      <div class="service-intro">
+        <div class="service-intro-title">
+          <p class="eyebrow">SERVICE</p>
+          <h2>私たちの提供する5つのこと</h2>
+        </div>
+        <p class="service-intro-lead">
+          戦略から実行まで、一気通貫で。<br>
+          マーケティングの全体をサポートします。
+        </p>
+      </div>
+
+      <ol class="service-flow" aria-label="事業理解から公開後の改善までの5つのプロセス">
+        <li class="service-route" aria-hidden="true">
+          <svg viewBox="0 0 1200 1080" preserveAspectRatio="none" focusable="false">
+            <path d="M84 112 C270 112 330 264 494 264 C660 264 650 520 600 540 C550 560 540 816 706 816 C872 816 918 968 1110 968"/>
+          </svg>
+        </li>
+
+        <li class="service-step service-step-1">
+          <div class="service-step-meta">
+            <span class="service-step-index">01</span>
+            <span class="service-step-name">INSIGHT</span>
+          </div>
+          <div class="service-step-body">
+            <h3>事業を知る。</h3>
+            <p>事業内容や商品、顧客、競合、いまの施策を整理。見えている課題だけでなく、まだ活かされていない強みまで見つめます。</p>
+          </div>
+        </li>
+
+        <li class="service-step service-step-2">
+          <div class="service-step-meta">
+            <span class="service-step-index">02</span>
+            <span class="service-step-name">IDEA</span>
+          </div>
+          <div class="service-step-body">
+            <h3>新しい一手を考える。</h3>
+            <p>「何を作るか」を先に決めません。その企業だからこそできることを起点に、ユーザーへ新しい価値を届ける一手を発想します。</p>
+          </div>
+        </li>
+
+        <li class="service-step service-step-3">
+          <span class="service-design-word" aria-hidden="true">DESIGN</span>
+          <div class="service-step-meta">
+            <span class="service-step-index">03</span>
+            <span class="service-step-name">DESIGN</span>
+          </div>
+          <div class="service-step-body">
+            <h3>体験に落とし込む。</h3>
+            <p>企画をWebサイト・LP・コンテンツ・診断・シミュレーターなど、具体的な体験へ。UX設計からビジュアルまで一貫して手がけます。</p>
+          </div>
+        </li>
+
+        <li class="service-step service-step-4">
+          <div class="service-step-meta">
+            <span class="service-step-index">04</span>
+            <span class="service-step-name">BUILD</span>
+          </div>
+          <div class="service-step-body">
+            <h3>実際につくる。</h3>
+            <p>企画した施策をWeb上に実装します。サイトやLPの制作はもちろん、インタラクションやコンテンツの実装まで手がけます。</p>
+          </div>
+        </li>
+
+        <li class="service-step service-step-5">
+          <div class="service-step-meta">
+            <span class="service-step-index">05</span>
+            <span class="service-step-name">GROW</span>
+          </div>
+          <div class="service-step-body">
+            <h3>公開して、育てる。</h3>
+            <p>つくって終わりではありません。データとユーザーの反応を見ながら改善を重ね、より成果につながる施策へ育てていきます。</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ABOUT / COMPANY PROFILE + CTA -->
+    <section class="about-row" id="about" aria-labelledby="about-title">
+      <div class="about-company">
+        <div class="about-intro">
+          <p class="about-label">ABOUT NOVA</p>
+          <h2 id="about-title">企業情報</h2>
+          <p class="about-statement">視点を変え、<br>未来をつくる。</p>
+          <p class="about-description">
+            NOVAは、マーケティングを軸に、事業の成長と人の可能性をつなぐパートナーです。クライアントの想いに寄り添いながら、新しい可能性をかたちにします。
+          </p>
+          <figure class="about-photo">
+            <img src="design-source/photo-about-office.png" alt="観葉植物のあるオフィスの写真">
+            <span class="about-word" aria-hidden="true">NOVA</span>
+          </figure>
+        </div>
+
+        <dl class="company-profile" aria-label="NOVAの会社情報">
+          <div class="company-profile-row">
+            <dt>会社名</dt>
+            <dd>NOVA</dd>
+          </div>
+          <div class="company-profile-row company-profile-services">
+            <dt>事業内容</dt>
+            <dd>
+              <span>Webサイト・LP制作</span>
+              <span>Webマーケティング支援</span>
+              <span>UX・UI設計</span>
+              <span>Webサイト運用・改善</span>
+              <span>マーケティングコンサルティング</span>
+            </dd>
+          </div>
+          <div class="company-profile-row">
+            <dt>設立</dt>
+            <dd>2026年8月</dd>
+          </div>
+          <div class="company-profile-row">
+            <dt>代表</dt>
+            <dd>木野内 結真</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section class="contact" id="contact">
+      <div class="contact-head">
+        <p class="contact-eyebrow">CONTACT</p>
+        <h2>お問い合わせ</h2>
+        <p class="section-lead">
+          サービスに関するご相談、お見積もり、取材・採用に関するお問い合わせなど、<br>
+          お気軽にご連絡ください。
+        </p>
+      </div>
+
+      <!--
+        社長へ（実装メモ）: Netlify Forms を利用する実装に変更しました。
+
+        Netlify Forms は「サイトが Netlify 上にデプロイされ、ビルドされた時点で
+        初めて機能」します。Netlify がビルド時にこのHTMLをスキャンし、
+        data-netlify="true" を持つ <form> を自動検出してフォーム送信の受け皿を
+        作る仕組みのため、ローカル環境や Netlify 以外でのホスティング（他社サーバー等）
+        では検出・送信ともに動作しません（このタグ自体は残ったままになりますが、
+        実際に送信を受け取ってはくれません）。
+
+        - name="contact" と data-netlify="true" が Netlify Forms 検出に必要な属性です。
+        - スパム対策として netlify-honeypot="bot-field" を設定し、フォーム内に
+          人間には見えない bot-field を用意しています（Botが埋めるとNetlifyが
+          自動でスパム扱いにします）。
+        - 送信結果の表示は既存のUI（インラインバリデーション・下部のステータス
+          メッセージ）をそのまま活かすため、ネイティブのPOSTではなく script.js
+          側の fetch によるAJAX送信にしています（Netlify公式のAJAX送信パターン）。
+          そのため action 属性は設定していません（未設定でもNetlify Forms自体の
+          検出・動作には影響しません）。
+        - Netlifyへデプロイ後は、Netlify管理画面の「Forms」からこのフォーム
+          （contact）の送信内容を確認できます。通知メール等の設定もそちらから
+          行えます。
+      -->
+      <form
+        class="contact-form"
+        id="contactForm"
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
+        novalidate
+      >
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="contact-form-hp" aria-hidden="true">
+          <label>入力しないでください（Botスパム対策）
+            <input type="text" name="bot-field" tabindex="-1" autocomplete="off">
+          </label>
+        </p>
+
+        <div class="form-row">
+          <label for="cf-company">会社名<span class="form-optional">任意</span></label>
+          <input type="text" id="cf-company" name="company" autocomplete="organization">
+        </div>
+
+        <div class="form-row">
+          <label for="cf-name">お名前<span class="form-required">必須</span></label>
+          <input type="text" id="cf-name" name="name" autocomplete="name" required aria-required="true" aria-describedby="cf-name-error">
+          <p class="form-error" id="cf-name-error" role="alert"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="cf-email">メールアドレス<span class="form-required">必須</span></label>
+          <input type="email" id="cf-email" name="email" autocomplete="email" required aria-required="true" aria-describedby="cf-email-error">
+          <p class="form-error" id="cf-email-error" role="alert"></p>
+        </div>
+
+        <div class="form-row">
+          <label for="cf-message">お問い合わせ内容<span class="form-required">必須</span></label>
+          <textarea id="cf-message" name="message" rows="6" required aria-required="true" aria-describedby="cf-message-error"></textarea>
+          <p class="form-error" id="cf-message-error" role="alert"></p>
+        </div>
+
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+
+        <button type="submit" class="btn btn-primary">
+          <span>送信する</span><span class="arrow">→</span>
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-cta">
+        <p class="footer-cta-text">まずはお気軽にご相談ください。</p>
+        <a href="#contact" class="footer-cta-link"><span>お問い合わせはこちら</span><span class="arrow">→</span></a>
+      </div>
+
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="footer-logo" href="#top" aria-label="NOVA home">
+            <img class="footer-logo-img" src="design-source/logo-nova-wordmark.png" alt="NOVA" width="888" height="201">
+          </a>
+          <p class="footer-tagline">視点を変え、<br>未来をつくるマーケティングパートナー</p>
+        </div>
+
+        <nav class="footer-sitemap" aria-label="フッターナビゲーション">
+          <div class="footer-nav-group">
+            <p class="footer-nav-title">サービス</p>
+            <a href="#plan">Plan</a>
+            <a href="#service">Service</a>
+          </div>
+          <div class="footer-nav-group">
+            <p class="footer-nav-title">会社情報</p>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+          </div>
+          <div class="footer-nav-group">
+            <p class="footer-nav-title">お問い合わせ</p>
+            <a href="#contact">Contact</a>
+          </div>
+        </nav>
+
+        <div class="footer-contact">
+          <p class="footer-nav-title">Mail</p>
+          <a href="mailto:contact@nova-envisions.com" class="footer-mail">contact@nova-envisions.com</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2026 NOVA</p>
+        <!-- プライバシーポリシーページ（privacy.html）は未作成です。ページ作成後、リンク先をご確認ください。 -->
+        <div class="footer-legal">
+          <a href="privacy.html">プライバシーポリシー</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
